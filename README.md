@@ -21,6 +21,20 @@ To address this, we introduce **SWE-Perf**, the first benchmark meticulously des
 
 ## How to Evaluate
 
+Evaluate patch predictions on SWE-Perf with the following command:
+
+```shell
+python -m sweperf.harness.run_evaluation \
+    --dataset_name SWE-Perf/SWE-Perf \
+    --predictions_path <path_to_predictions> \
+    --max_workers <num_workers> \
+    --run_id <run_id> \
+
+python -m sweperf.harness.check_evaluation \
+        --dataset_dir  SWE-Perf/SWE-Perf \
+        --log_root <path_to_log> \
+        --output_path <csv_output_path>
+```
 
 ## BibTeX
 
