@@ -4,11 +4,15 @@
 
 <p align="center">
   <a href="https://swe-perf.github.io/">
-    <img src="https://img.shields.io/badge/project-Home-b31b1b.svg" alt="arXiv Paper">
+    <img src="https://img.shields.io/badge/project-Home-b31b1b.svg" alt="home">
   </a>
-  <a href="#">
+  <a href="https://huggingface.co/datasets/SWE-Perf/SWE-Perf">
     <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Data-blue" alt="Data">
   </a>
+  <a href="https://arxiv.org/abs/2507.12415">
+    <img src="https://img.shields.io/badge/arXiv-2507.12415-b31b1b.svg">
+  </a>
+
 </p>
 
 ---
@@ -17,7 +21,7 @@
 
 Optimizing code performance is paramount in software engineering, yet it remains a largely unexplored frontier for Large Language Models (LLMs). While models excel at fixing bugs, their ability to make code faster at a repository-scale is not well understood.
 
-To address this, we introduce **SWE-Perf**, the first benchmark meticulously designed to evaluate LLMs on performance optimization tasks within genuine, complex **repository contexts**. Unlike benchmarks that focus on isolated code snippets, SWE-Perf challenges models to understand and modify **entire codebases**. The benchmark comprises **140 instances**, each derived from a real performance-improving pull request on a popular GitHub repository. For each instance, a model is provided with the full source code, a specific performance-related test, and the human expert's solution for reference. The core task is to generate a code patch that reduces the test's execution time without introducing bugs.
+To address this, we introduce **SWE-Perf**, the first benchmark meticulously designed to evaluate LLMs on performance optimization tasks within genuine, complex **repository contexts**. Unlike benchmarks that focus on isolated code snippets, SWE-Perf challenges models to understand and modify **entire codebases**. The benchmark comprises **140 instances**, each derived from a real performance-improving pull request on a popular GitHub repository. For each instance, a model is provided with the full source code, the target functions, and the human expert's solution for reference. The core task is to generate a code patch that reduces the test's execution time without introducing bugs.
 
 ## How to Evaluate
 
@@ -43,7 +47,7 @@ If you find our work useful, please consider citing our paper:
 @article{he2025sweperf,
     title={SWE-Perf: Can Language Models Optimize Code Performance on Real-World Repositories?},
     author={He, Xinyi and Liu, Qian and Du, Mingzhe and Yan, Lin and Fan, Zhijie and Huang, Yiming and Yuan, Zejian and Ma, Zejun},
-    journal={arXiv preprint arXiv:XXXX.XXXXX},
+    journal={arXiv preprint arXiv:2507.12415},
     year={2025}
 }
 ```
