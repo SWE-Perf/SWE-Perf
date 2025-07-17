@@ -121,11 +121,11 @@ def calculate_performance_result(sweperf_data, log_root):
             mi.append(mi_sig)
             # mi.append((durations_base[test] - durations[test])/durations_base[test] if durations[test] < durations_base[test] else 0)
             # mi.append((avg_base - durations[test])/avg_base)
-            print(f"----------{id}--{test}--{len(efficiency_test)}---------")
+            # print(f"----------{id}--{test}--{len(efficiency_test)}---------")
             # print(f"hi: {(avg_base - avg_head)/avg_base}, {avg_base}, {avg_head}")
             # print(f"mi: {(durations_base[test] - durations[test])/durations_base[test]}, {durations_base[test]}, {durations[test]}")
-            print(f"hi: {hi_sig}, {avg_base}, {avg_head}")
-            print(f"mi: {mi_sig}, {np.mean(durations_base[test])}, {np.mean(durations[test])}")
+            # print(f"hi: {hi_sig}, {avg_base}, {avg_head}")
+            # print(f"mi: {mi_sig}, {np.mean(durations_base[test])}, {np.mean(durations[test])}")
 
         else:
             # print(f"Id {id}, Test {test} mi: {sum(mi)/len(mi)}")
