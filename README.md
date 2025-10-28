@@ -45,7 +45,9 @@ See the [evaluation README](/evaluation/README.md) for detailed usage.
 
 ## 🛠️ Generation Overview
 
-Generation covers the process of using LLMs to generate code patches that improve performance on SWE-Perf tasks. 
+Generation covers the process of using LLMs to generate code patches that improve performance on SWE-PerF tasks. The pipeline supports both **oracle** and **realistic** settings.
+
+### Oracle Setting
 
 The **Oracle generation pipeline** includes the following steps:
 
@@ -54,6 +56,14 @@ The **Oracle generation pipeline** includes the following steps:
 3. **Convert Outputs** – Transform model outputs into **unified diff format**.
 
 See the [generation README](/generation/oracle/README.md) for details.
+
+### Realistic Setting
+
+For realistic settings, we provide implementations using different frameworks:
+
+- **OpenHands**: [OpenHands Inference Guide](/generation/realistic/openhands/README.md)
+- **Agentless**: [Agentless Inference Guide](/generation/realistic/agentless/README.md)
+
 
 ## 📂 Data Collection Overview
 
