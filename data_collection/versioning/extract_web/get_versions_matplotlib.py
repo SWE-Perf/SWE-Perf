@@ -10,8 +10,8 @@ from dateutil import parser
 sys.path.append("../../harness")
 from utils import get_instances
 
-PATH_TASKS_MATPLOTLIB = "../../datasests/matplotlib/tasks/matplotlib-task-instances.jsonl"
-PATH_VERSION_MATPLOTLIB = "../../datasests/matplotlib/versions/"
+PATH_TASKS_MATPLOTLIB = "../../datasets/matplotlib/tasks/matplotlib-task-instances.jsonl"
+PATH_VERSION_MATPLOTLIB = "../../datasets/matplotlib/versions/"
 
 # Get raw matplotlib dataset
 data_tasks = get_instances(PATH_TASKS_MATPLOTLIB)

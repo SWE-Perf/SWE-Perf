@@ -9,8 +9,8 @@ from datetime import datetime
 sys.path.append("../../harness")
 from utils import get_instances
 
-PATH_TASKS_XARRAY = "../../datasests/xarray/tasks/xarray-task-instances.jsonl"
-PATH_VERSION_XARRAY = "../../datasests/xarray/versions/"
+PATH_TASKS_XARRAY = "../../datasets/xarray/tasks/xarray-task-instances.jsonl"
+PATH_VERSION_XARRAY = "../../datasets/xarray/versions/"
 
 # Get raw xarray dataset
 data_tasks = get_instances(PATH_TASKS_XARRAY)

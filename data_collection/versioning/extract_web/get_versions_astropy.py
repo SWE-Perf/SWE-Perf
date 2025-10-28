@@ -9,7 +9,7 @@ from datetime import datetime
 sys.path.append("../../harness")
 from utils import get_instances
 
-PATH_TASKS_ASTROPY = "../../datasests/astropy/tasks/astropy-task-instances.jsonl"
+PATH_TASKS_ASTROPY = "../../datasets/astropy/tasks/astropy-task-instances.jsonl"
 PATH_VERSION_ASTROPY = "../../datasets/astropy/versions/"
 
 # Get raw astropy dataset

@@ -7,7 +7,7 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/pandas/versions/"
-python scripts/filter_empty_version.py  ../datasets/pandas/versions/pandas-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/pandas/versions/pandas-task-instances_versions.json
 
 
 python -m versioning.get_versions \
@@ -18,7 +18,7 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/MONAI/versions/"
-python scripts/filter_empty_version.py  ../datasets/MONAI/versions/MONAI-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/MONAI/versions/MONAI-task-instances_versions.json
 
 
 python -m versioning.get_versions \
@@ -29,7 +29,7 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/moto/versions/"
-python scripts/filter_empty_version.py  ../datasets/moto/versions/moto-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/moto/versions/moto-task-instances_versions.json
 
 
 python -m versioning.get_versions \
@@ -40,7 +40,7 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/mypy/versions/"
-python scripts/filter_empty_version.py  ../datasets/mypy/versions/mypy-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/mypy/versions/mypy-task-instances_versions.json
 
 
 python -m versioning.get_versions \
@@ -51,7 +51,7 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/dvc/versions/"
-python scripts/filter_empty_version.py  ../datasets/dvc/versions/dvc-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/dvc/versions/dvc-task-instances_versions.json
 
 
 python -m versioning.get_versions \
@@ -62,7 +62,7 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/dask/versions/"
-python scripts/filter_empty_version.py  ../datasets/dask/versions/dask-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/dask/versions/dask-task-instances_versions.json
 
 
 python -m versioning.get_versions \
@@ -73,7 +73,7 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/conan/versions/"
-python scripts/filter_empty_version.py  ../datasets/conan/versions/conan-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/conan/versions/conan-task-instances_versions.json
 
 
 python -m versioning.get_versions \
@@ -84,7 +84,7 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/pydantic/versions/"
-python scripts/filter_empty_version.py  ../datasets/pydantic/versions/pydantic-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/pydantic/versions/pydantic-task-instances_versions.json
 
 
 python -m versioning.get_versions \
@@ -95,7 +95,7 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/bokeh/versions/"
-python scripts/filter_empty_version.py  ../datasets/bokeh/versions/bokeh-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/bokeh/versions/bokeh-task-instances_versions.json
 
 
 python -m versioning.get_versions \
@@ -106,7 +106,7 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/modin/versions/"
-python scripts/filter_empty_version.py  ../datasets/modin/versions/modin-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/modin/versions/modin-task-instances_versions.json
 
 
 python -m versioning.get_versions \
@@ -117,17 +117,17 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/hydra/versions/"
-python scripts/filter_empty_version.py  ../datasets/hydra/versions/hydra-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/hydra/versions/hydra-task-instances_versions.json
 
 
 cd versioning
 python -m extract_web.get_versions_astropy
-python scripts/filter_empty_version.py  ../datasets/astropy/versions/astropy-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/astropy/versions/astropy-task-instances_versions.json
 
 
 cd versioning
 python -m extract_web.get_versions_xarray
-python scripts/filter_empty_version.py  ../datasets/xarray/versions/xarray-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/xarray/versions/xarray-task-instances_versions.json
 
 
 python -m versioning.get_versions \
@@ -138,12 +138,12 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/django/versions/"
-python scripts/filter_empty_version.py  ../datasets/django/versions/django-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/django/versions/django-task-instances_versions.json
 
 
 cd versioning
 python -m extract_web.get_versions_matplotlib
-python scripts/filter_empty_version.py  ../datasets/matplotlib/versions/matplotlib-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/matplotlib/versions/matplotlib-task-instances_versions.json
 
 
 python -m versioning.get_versions \
@@ -154,7 +154,7 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/scikit-learn/versions/"
-python scripts/filter_empty_version.py  ../datasets/scikit-learn/versions/scikit-learn-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/scikit-learn/versions/scikit-learn-task-instances_versions.json
 
 
 python -m versioning.get_versions \
@@ -165,7 +165,7 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/sympy/versions/"
-python scripts/filter_empty_version.py  ../datasets/sympy/versions/sympy-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/sympy/versions/sympy-task-instances_versions.json
 
 
 python -m versioning.get_versions \
@@ -176,7 +176,7 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/sphinx/versions/"
-python scripts/filter_empty_version.py  ../datasets/sphinx/versions/sphinx-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/sphinx/versions/sphinx-task-instances_versions.json
 
 
 python -m versioning.get_versions \
@@ -187,7 +187,7 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/pytest/versions/"
-python scripts/filter_empty_version.py  ../datasets/pytest/versions/pytest-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/pytest/versions/pytest-task-instances_versions.json
 
 
 python -m versioning.get_versions \
@@ -198,7 +198,7 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/pylint/versions/"
-python scripts/filter_empty_version.py  ../datasets/pylint/versions/pylint-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/pylint/versions/pylint-task-instances_versions.json
 
 
 python -m versioning.get_versions \
@@ -209,7 +209,7 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/seaborn/versions/"
-python scripts/filter_empty_version.py  ../datasets/seaborn/versions/seaborn-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/seaborn/versions/seaborn-task-instances_versions.json
 
 
 python -m versioning.get_versions \
@@ -220,7 +220,7 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/flask/versions/"
-python scripts/filter_empty_version.py  ../datasets/flask/versions/flask-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/flask/versions/flask-task-instances_versions.json
 
 
 python -m versioning.get_versions \
@@ -231,4 +231,4 @@ python -m versioning.get_versions \
     --path_conda "<path_to_conda>" \
     --testbed "../testbed" \
     --output_dir "../datasets/requests/versions/"
-python scripts/filter_empty_version.py  ../datasets/requests/versions/requests-task-instances_versions.json
+python versioning/filter_empty_version.py  ../datasets/requests/versions/requests-task-instances_versions.json
