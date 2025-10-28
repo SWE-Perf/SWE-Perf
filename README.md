@@ -61,8 +61,8 @@ See the [generation README](/generation/oracle/README.md) for details.
 
 For realistic settings, we provide implementations using different frameworks:
 
-- **OpenHands**: [OpenHands Inference Guide](/generation/realistic/openhands/README.md)
-- **Agentless**: [Agentless Inference Guide](/generation/realistic/agentless/README.md)
+- **OpenHands**: [OpenHands Inference Guide](/generation/realistic/README_OpenHands.md)
+- **Agentless**: [Agentless Inference Guide](/generation/realistic/README_Agentless.md)
 
 
 ## 📂 Data Collection Overview
